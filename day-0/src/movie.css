@@ -1,0 +1,13 @@
+.maindiv{
+    width: 90%;
+    border: 2px solid black;
+    height: 1500px;
+    margin: auto;
+}
+
+.card{
+    width: 30%;
+    border: 2px solid rgb(219, 46, 46);
+    height:350px;
+    border-radius: 20px;
+}
