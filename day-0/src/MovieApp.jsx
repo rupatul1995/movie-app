@@ -5,7 +5,7 @@ import "./movie.css";
 
 function MovieApp(){
     const[movieApp ,setMovieApp]=useState([]);
-    console.log(movieApp ,"movieApp");
+    console.log(movieApp );
     
 
     async function GetMovieApp(){
@@ -24,8 +24,8 @@ function MovieApp(){
 
          try {
            const response = await axios.request(options);
-           setMovieApp(response.data)
-           console.log(response);
+           setMovieApp(response.data.contents)
+           console.log(response.data.contents);
            } catch (error) {
            console.error(error);
             }
