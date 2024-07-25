@@ -29,27 +29,53 @@ function Moviepractice (){
     }
 
     useEffect(()=>{
-        GetMovie()},[]);
+        GetMovie()
+      },[]);
 
     return(
         <div  className="maindiv">
-            {/* <div id="navbar">
-                <button>Dark</button>
-                <button>Light</button>
-            </div> */}
             {movie.map((moviename)=>(
             <div className="card">
-                        <p onClick={() => window.open(moviename.youtube_trailer, "_blank")}>{moviename.title}</p>
-                        <img src={moviename.poster_path} alt="img" />
-                        <p> {moviename.release_date} </p>
-                        <p> {moviename.vote_average}({moviename.vote_count}) </p>
-                        {/* <p>{moviename.genres}</p> */}
-                        <p>{moviename.overview}</p>
-                    </div>
-
+                 <p onClick={() => window.open(moviename.youtube_trailer, "_blank")}>{moviename.title}</p>
+                 <img src={moviename.poster_path} alt="img" />
+                 <p> {moviename.release_date} </p>
+                 <p> {moviename.vote_average}({moviename.vote_count}) </p>
+                    {/* <p>{moviename.genres}</p> */}
+                 <p>{moviename.overview}</p>
+                  </div>
             ))}
         </div>
     )
 }
 
 export default Moviepractice;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
